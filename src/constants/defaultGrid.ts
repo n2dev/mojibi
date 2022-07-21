@@ -1,5 +1,5 @@
 /**
-* stores a cell's state
+* Stores each cell's state
 * [0, 0, 0, 0, 0
 *  0, 0, 0, 0, 0
 *  0, 0, 0, 0, 0

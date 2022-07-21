@@ -1,13 +1,23 @@
-/** ビンゴの文字 **/
+/**
+ * Bingo Letters
+ * It excludes を because there's no words that contain を
+ */
 const hiragana =
 	'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわんぁぃぅぇぉがぎぐげござじずぜぞだぢづでどっばびぶべぼぱぴぷぺぽゃゅょー'
 
 /**
  * Generates random hiragana letters in array without duplicates (length = 25)
- * @returns random letters in array
+ * 
+ * @returns An array of 25 string elements
  * @example
- *
- *
+ * ```
+ * // ['す', 'い', 'り', 'ど', 'う',
+ * //  'よ', 'あ', 'う', 'づ', 'と',
+ * //  'た', 'ぽ', 'お', 'け', 'ぼ',
+ * //  'ろ', 'や', 'ぬ', 'し', 'の',
+ * //  'ゃ', 'ふ', 'れ', 'そ', 'ほ',]
+ * console.log(getBingoLetters())
+ * ```
  */
 export const getBingoLetters = (): string[] => {
 	const bingoLetters: string[] = []

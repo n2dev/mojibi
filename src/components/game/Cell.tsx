@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from 'react'
 import { GameContext } from '../game'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
-import { doesSentenceContainLetter } from '../../utils/doesSentenceContainLetter'
+import { doesWordContainLetter } from '../../utils/doesWordContainLetter'
 
 interface CellProps {
 	letter: string
@@ -23,11 +23,19 @@ const Cell = ({ letter, index }: CellProps) => {
 		GameContext
 	) as CellContext
 	
-	// Changes the color of cells
+	/**
+	 * Triggers when a player types a word, or complete a bing line.
+	 * Changes the color of cells.
+	 * 
+	 * gray[#3A3A3C] if no matches are found.
+	 * red[#AC3E3E] if the letter in the cell is contained in the word a player typing. 
+	 * yellow[#B59F3B] if the letter in the cell is contained in the word a player entered.
+	 * green[#538D4E] if the letter in the cell is a part of the letters that complete a bingo line.
+	 */
 	useEffect(() => {
 		const tmpGrid = currentGrid.concat()
 		if (savedGrid[index] === 0) {
-			if (doesSentenceContainLetter(currentWord, letter)) {
+			if (doesWordContainLetter(currentWord, letter)) {
 				tmpGrid[index] = 1
 				setCellColor('#AC3E3E')
 			} else {

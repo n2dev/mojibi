@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useEffect, useContext } from 'react'
 
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
@@ -22,7 +22,7 @@ const Bingo = () => {
 	const { enteredWords, savedGrid, setSavedGrid } = useContext(GameContext) as BingoContext
 
 	/**
-	 * Triggers when player enter a word.
+	 * Triggers when a player enters a word.
 	 * Changes elements of savedGrid to 1 or 2 according to the following situations.
 	 *
 	 * 1 if a letter in Bingo Grid matches a letter in entered words
