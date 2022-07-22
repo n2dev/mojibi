@@ -1,7 +1,9 @@
 import { useEffect, useState, useContext } from 'react'
-import { GameContext } from '../game'
+
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
+
+import { GameContext } from '../game'
 import { doesWordContainLetter } from '../../utils/doesWordContainLetter'
 
 interface CellProps {

@@ -3,11 +3,11 @@ import { useEffect, useContext } from 'react'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 
-import Cell from './Cell'
 import { GameContext } from '../game'
 import { getBingoLetters } from '../../utils/getBingoLetters'
 import { checkForMatchedLetters } from '../../utils/checkForMatchedLetters'
 import { checkForBingoLines } from '../../utils/checkForBingoLines'
+import Cell from './Cell'
 
 // Random 25 letters in Bingo Grid
 const bingoLetters: string[] = getBingoLetters()

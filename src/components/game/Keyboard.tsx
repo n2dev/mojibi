@@ -1,10 +1,10 @@
 import { useState, useContext } from 'react'
-import { GameContext } from '../game'
+
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
-import React from 'react'
 
+import { GameContext } from '../game'
 import { VALID_WORDS } from '../../constants/validWords'
 
 interface KeyboardProps {
