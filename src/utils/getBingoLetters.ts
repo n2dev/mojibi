@@ -1,9 +1,9 @@
 /**
  * Bingo Letters
- * It excludes を because there's no words that contain を
+ * It excludes ぢ、を, ゎ because there's no words that contain them
  */
 const hiragana =
-	'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわんぁぃぅぇぉがぎぐげござじずぜぞだぢづでどっばびぶべぼぱぴぷぺぽゃゅょー'
+	'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわんぁぃぅぇぉがぎぐげござじずぜぞだづでどっばびぶべぼぱぴぷぺぽゃゅょー'
 
 /**
  * Generates random hiragana letters in array without duplicates (length = 25)
