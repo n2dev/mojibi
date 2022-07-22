@@ -3,6 +3,7 @@ import { useState, createContext } from 'react'
 import Container from '@mui/material/Container'
 
 import { defaultGrid } from '../../constants/defaultGrid'
+import UpperInfo from './UpperInfo'
 import BingoGrid from './BingoGrid'
 import Keyboard from './Keyboard'
 
@@ -15,7 +16,7 @@ const Game = () => {
 	const [savedGrid, setSavedGrid] = useState<number[]>(defaultGrid.concat())
 
 	return (
-		<Container maxWidth='sm'>
+		<Container maxWidth='xs'>
 			<GameContext.Provider
 				value={{
 					currentWord,
@@ -28,6 +29,7 @@ const Game = () => {
 					setSavedGrid,
 				}}
 			>
+				<UpperInfo />
 				<BingoGrid />
 				<Keyboard />
 			</GameContext.Provider>
