@@ -41,7 +41,7 @@ export const checkForBingoLines = (grid: number[]): number[] => {
 		}
 	}
 	// Checks if the grid has a diagonal(top left to bottom right) line.
-	if (grid[0] > 0 && grid[6] > 0 && grid[12] > 0 && grid[18] > 0 && grid[24]) {
+	if (grid[0] > 0 && grid[6] > 0 && grid[12] > 0 && grid[18] > 0 && grid[24] > 0) {
 		grid[0] = 2
 		grid[6] = 2
 		grid[12] = 2
@@ -49,7 +49,7 @@ export const checkForBingoLines = (grid: number[]): number[] => {
 		grid[24] = 2
 	}
 	// Checks if the grid has a diagonal(top right to bottom left) line.
-	if (grid[4] > 0 && grid[8] > 0 && grid[12] > 0 && grid[16] > 0 && grid[20]) {
+	if (grid[4] > 0 && grid[8] > 0 && grid[12] > 0 && grid[16] > 0 && grid[20] > 0) {
 		grid[4] = 2
 		grid[8] = 2
 		grid[12] = 2
