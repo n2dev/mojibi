@@ -1,7 +1,7 @@
 /**
  * Checks if the grid has bingo lines.
  *
- * @param word - The first input number array
+ * @param grid - The first input number array
  * @returns number array
  * @example
  * ```
@@ -15,7 +15,7 @@
  * 							 1, 1, 1, 1, 1,
  * 							 0, 0, 1, 0, 0,
  * 							 1, 0, 1, 0, 0,]
- * console.log(checkForMatchedLetters(word, grid, bingoLetters))
+ * console.log(checkForMatchedLetters(grid))
  * ```
  */
 export const checkForBingoLines = (grid: number[]): number[] => {
