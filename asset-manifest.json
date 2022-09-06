@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mojibi/static/css/main.19f97c41.css",
+    "main.js": "/mojibi/static/js/main.4cda6aaa.js",
+    "static/js/787.e39981d0.chunk.js": "/mojibi/static/js/787.e39981d0.chunk.js",
+    "index.html": "/mojibi/index.html",
+    "main.19f97c41.css.map": "/mojibi/static/css/main.19f97c41.css.map",
+    "main.4cda6aaa.js.map": "/mojibi/static/js/main.4cda6aaa.js.map",
+    "787.e39981d0.chunk.js.map": "/mojibi/static/js/787.e39981d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19f97c41.css",
+    "static/js/main.4cda6aaa.js"
+  ]
+}
